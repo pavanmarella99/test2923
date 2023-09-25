@@ -5,7 +5,9 @@ public class Main {
 
         System.out.println("Hello world!");
         int x = 0;
+        int y =0;
         int a = 10;
+        int[] arr = new int[10];
         float b = 9.4f;
         float sum;
         sum = a + b;
@@ -20,9 +22,17 @@ public class Main {
                 }
             }
             if (x<3) {
-                System.out.println("prime number is," + i);
+                arr[y] = i;
+                y++;
+                //System.out.println("prime number is," + i);
             }
             x=0;
         }
+        for (int j : arr) {
+            if (j != 0) {
+                System.out.print(j + "  ");
+            }
+        }
+
     }
 }
